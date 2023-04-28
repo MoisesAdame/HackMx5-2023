@@ -1,0 +1,237 @@
+body {
+    font-family: 'futura-pt', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    overflow-x: hidden;
+    color: #868F9B;
+    background-color: #d97d7b;
+}
+.accent1-color {
+    color: #50205c;
+}
+.accent2-color {
+    color: #f2cb65;
+}
+.accent3-color {
+    color: #d97d7b;
+}
+::-moz-selection {
+    background-color: #50205c;
+    color: #FFF;
+}
+
+::selection {
+    background-color: #50205c;
+    color: #FFF;
+}
+
+
+
+/* --  Input  -- */
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
+    height: 40px;
+    width: 100%;
+    border: none;
+	  background: #F4F4F4;
+    background-color: #F4F4F4 !important;
+    border-bottom: 2px solid #EEE;
+    color: #354052;
+    padding: 0px 10px;
+    opacity: 1;
+    -webkit-transition: 0.2s border-color, 0.2s opacity;
+    transition: 0.2s border-color, 0.2s opacity;
+}
+
+
+
+textarea {
+    padding: 10px 10px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, input[type="url"]:focus, input[type="tel"]:focus, textarea:focus {
+    border-color: #50205c;
+    opacity: 1;
+}
+
+#inputBirthDate::placeholder {
+  opacity: 0.6;
+}
+
+.file-input {
+	  display: inline-block;
+	  text-align: left;
+	  background: #fff;
+	  padding: 16px;
+
+	    width: 100%;
+	  position: relative;
+	  border-radius: 3px;
+	}
+
+	.file-input > [type='file'] {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  opacity: 0;
+	  z-index: 10;
+	  cursor: pointer;
+	}
+
+
+
+	.file-input > .label {
+	  color: #333;
+	  white-space: nowrap;
+	  opacity: .3;
+	}
+
+	.file-input.-chosen > .label {
+	    color: #f2cb65;
+	  opacity: 1;
+	}
+/* --  Buttons  -- */
+
+.main-btn, .white-btn, .outline-btn {
+    display: inline-block;
+    padding: 10px 35px;
+    margin: 3px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    -webkit-transition: 0.2s opacity;
+    transition: 0.2s opacity;
+}
+
+.main-btn {
+    background: #50205c;
+    color: #FFF;
+}
+
+.white-btn {
+    background: #FFF;
+    color: #10161A !important;
+}
+
+.outline-btn {
+    background: transparent;
+    color: #50205c !important;
+    border-color: #50205c;
+}
+.btn-send{
+    background: #d97d7b;
+    color: white !important;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+.main-btn:hover, .white-btn:hover, .outline-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
+        background: transparent;
+        color: #50205c;
+    }
+    .main-nav>li>a:after {
+        content: "";
+        display: block;
+        background-color: #50205c;
+        height: 2px;
+        width: 0%;
+        -webkit-transition: 0.2s width;
+        transition: 0.2s width;
+    }
+
+}
+
+
+/* -- mobile nav -- */
+
+@media only screen and (max-width: 767px) {
+
+    .main-nav>li.active {
+        border-left: 6px solid #00b7dd;
+    }
+    .main-nav li a:hover, .main-nav li a:focus {
+        background-color: #d97d7b;
+        color: #FFF;
+        opacity: 1;
+    }
+
+}
+
+
+select, input[data-provide="datepicker"] {
+
+  /* styling */
+  background-color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.styled-select, input[data-provide="datepicker"]{
+  width: 100%;
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  border-color: #00b7dd;
+}
+select.styled-select{
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+}
+input[data-provide="datepicker"]{
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+}
+select.styled-select:focus {
+  background-image:
+    linear-gradient(45deg, green 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, green 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    calc(100% - 2.5em) 0.5em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+  outline: 0;
+}
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
