@@ -10,7 +10,7 @@
       <meta property="og:url"content="https://hackmx.mx/" />
       <meta property="og:title" content="HackMx by Tec de Monterrey" />
 
-      <title>HackMx 2</title>
+      <title>HackMx 5</title>
 
       <!--Font -->
       <link rel="stylesheet" href="https://use.typekit.net/bqt1rpy.css" />
@@ -35,23 +35,16 @@
 </head>
 
 <body>
-      <!-- Header -->
-      <header id="home">
-            <!-- Background Image -->
-            <div class="bg-img" style="background-color: #50205c;">
-            </div>
-            <!-- /Background Image -->
-
-            <!-- Nav -->
-            <nav id="nav" class="navbar nav-transparent">
+      <!-- Nav -->
+      <nav id="nav" class="navbar nav-transparent">
                   <div class="container">
 
                         <div class="navbar-header">
                               <!-- Logo -->
                               <div class="navbar-brand">
                                     <a href="/">
-                                          <img class="logo" src="images/logo.png" alt="logo">
-                                          <img class="logo-alt" src="images/logo-alt.png" alt="logo">
+                                          <img class="logo" src="images2/logoMini.png" alt="logo">
+                                          <img class="logo-alt" src="images2/logoExpanded.png" alt="logo">
                                     </a>
                               </div>
                               <!-- /Logo -->
@@ -83,33 +76,16 @@
                   </div>
             </nav>
             <!-- /Nav -->
+      <!-- Header -->
 
+      <header id="home">
             <!-- home wrapper -->
             <div class="home-wrapper">
-                  <div class="container">
-                        <div class="row">
-
-                              <!-- home content -->
-                              <div class="col-md-10 col-md-offset-1">
-                                    <div class="home-content">
-                                          <img src="images/logo-main.png"/>
-                                          <br/><br/>
-                                          <h1 class="text-white">HackMx</h1>
-                                          <p><span class="accent1-color">Design</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="accent2-color">Develop</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="accent3-color">Launch</span>
-                                          </p><br/>
-                                          <h2 class="text-white">27 y 28 de abril 2019</h2>
-                                          <br/>
-
-                                          <a class="btn outline-btn" href="?registro" style="font-size: 2em" >Regístrate</a>
-                                    </div>
-                              </div>
-
-                        </div>
-                  </div>
+                  <img src="images2/logoExpanded.png"/>
+                  <h2 class="text-orange">27 y 28 Mayo del 2023</h2>
+                  <a class="btn outline-btn" href="?registro" style="font-size: 2em" >Regístrate</a>
             </div>
             <!-- /home wrapper -->
-
-
       </header>
       <!-- /Header -->
 
